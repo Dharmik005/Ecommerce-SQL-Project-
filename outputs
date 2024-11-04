@@ -1,0 +1,60 @@
+#Query 1: Retrieve All Products with Their Categories:
+| product_id | product_name  | category_name  | price  | stock_quantity |
+|------------|---------------|----------------|--------|----------------|
+|          1 | Smartphone    | Electronics    | 699.99 |             50 |
+|          2 | Jeans         | Fashion        |  49.99 |            100 |
+|          3 | Blender       | Home & Kitchen |  89.99 |             30 |
+|          4 | Tennis Racket | Sports         | 120.00 |             20 |
+|          5 | Cooking Book  | Books          |  25.00 |            150 |
+
+
+#Query 2: List users and their orders:
+| user_id | username     | order_id | total_amount | status    |
+|---------|--------------|----------|--------------|-----------|
+|       3 | alice_wonder |        4 |        25.00 | Cancelled |
+|       4 | bob_builder  |     NULL |         NULL | NULL      |
+|       2 | jane_smith   |        2 |        49.99 | Shipped   |
+|       1 | john_doe     |        1 |       749.98 | Pending   |
+|       1 | john_doe     |        3 |       120.00 | Delivered |
+
+#Query 3: Total sales per product:
+| product_name  | total_sales |
+|---------------|-------------|
+| Smartphone    |      699.99 |
+| Jeans         |       49.99 |
+| Tennis Racket |      120.00 |
+| Cooking Book  |       49.99 |
+
+#Query 4: Product reviews for a specific product:
+| rating | comment             | username |
+|--------|---------------------|----------|
+|      5 | Amazing smartphone! | john_doe |
+
+#Query 5: Users with no orders:
+| user_id | username    |
+|---------|-------------|
+|       4 | bob_builder |
+
+#Query 6: Count of products in each category:
+| category_name  | product_count |
+|----------------|---------------|
+| Books          |             1 |
+| Electronics    |             1 |
+| Fashion        |             1 |
+| Home & Kitchen |             1 |
+| Sports         |             1 |
+
+#Query 7: Payment details for orders:
+| payment_id | amount | payment_method | status    | order_id |
+|------------|--------|----------------|-----------|----------|
+|          1 | 749.98 | Credit Card    | Completed |        1 |
+|          2 |  49.99 | PayPal         | Completed |        2 |
+|          3 | 120.00 | Bank Transfer  | Pending   |        3 |
+
+#Query 8: Average ratings for products:
+| product_name  | average_rating |
+|---------------|----------------|
+| Smartphone    |         5.0000 |
+| Jeans         |         4.0000 |
+| Blender       |         3.0000 |
+| Tennis Racket |         5.0000 |
